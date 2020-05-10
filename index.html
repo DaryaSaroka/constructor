@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Создание кроссворда</title>
+        <link rel="stylesheet" type="text/css" href="styles\general_style.css"/>
+        <link rel="stylesheet" type="text/css" href="styles\constructor_style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar"> 
+                <img class = "myicon" src="images/crossword.png" alt="Кроссворд">
+                <div class="nav2">
+                    <a class="burger-icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <ul>
+                        <li><a href="#allcrosswords">Все кроссворды</a></li>
+                        <li><a  href="#login">Выйти</a></li> 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="crossword-setting">
+                    <label>ID:</label>
+                    <input type="text"  name="id" required>   
+                    <label>Размер сетки:</label>   
+                <div class="size-setting">      
+                    <input class = "size-inp" type="text" value=10 name="N" required>
+                    <label>x</label>
+                    <input class = "size-inp" type="text" value=10 name="M" required>
+                    <button type="submit" class="OKbtn">OK</button>
+                </div>
+            </div>
+            <div class="creating">
+                <table class="crossword-table">
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td><b>1</b><input type="text" value="h" maxlength=1 title="Приветствие"></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td><input type="text" value="e" maxlength=1></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td><b>2</b><input type="text" value="w" maxlength=1 title="Длинное определение для короткого слова мир"></td><td><input type="text" value="o" maxlength=1></td><td><input type="text" value="r" maxlength=1></td><td><input type="text" value="l" maxlength=1></td><td><input type="text" value="d" maxlength=1></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td><input type="text" value="l" maxlength=1></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td><input type="text" value="o" maxlength=1></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </table>  
+                <div class="popup-form">
+                    <p class="close">x</p>
+                    <table id="current-word">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="text" value="w" maxlength=1>
+                                </td>
+                                <td>
+                                    <input type="text" value="o" maxlength=1>
+                                </td>
+                                <td>
+                                    <input type="text" value="r" maxlength=1>
+                                </td>
+                                <td>
+                                    <input type="text" value="l" maxlength=1>
+                                </td>
+                                <td>
+                                    <input type="text" value="d" maxlength=1>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <textarea cols=40 rows=5>Длинное определение для короткого слова мир</textarea>
+                    <button type="submit">Добавить</button>
+                    <button type="submit">Удалить</button>
+                </div>
+            </div>
+            <div class="ready">
+                <button type="submit">Готово</button>
+            </div>    
+        </main>
+    </body>
+</html>
